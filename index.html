@@ -3,7 +3,7 @@
  
   <head>
     <!-- Set the page title -->
-    <title>Escape From Tarkov Cultist Hunting</title>
+    <title>Escape From Tarkov : Cult Hunting</title>
 
     <!-- Set the charset we're using to UTF-8 -->
     <meta charset="UTF-8" />
@@ -165,7 +165,6 @@ input[type=radio] {
   padding: 3rem;
   border: solid rgb(38, 141, 69);
   border-radius: 10px;
-  box-shadow: 20px 20px 50px rgb(18, 43, 25);
   text-align: center;
   
 }
@@ -178,7 +177,7 @@ ol {
   border: solid rgb(38, 141, 69);
   border-radius: 10px;
   box-shadow: 20px 20px 50px rgb(18, 43, 25);
-  
+  list-style: none;
 }
 
 .box p{
@@ -205,12 +204,93 @@ display: table;
 
 .Tactical img {
   border: 0.5rem solid rgb(38, 141, 69);
-  size: 70%;
+  width: 90%;
 }
+
+
+.armortable table, tr, th, td {
+
+  padding: 10px;
+  text-align: center;
+}
+
+.toc li {
+  list-style-type: none;
+  padding: 2px;
+  overflow: hidden;
+  background-color: rgb(12, 12, 12);
+  border: solid rgb(38, 141, 69);
+  border-radius: 10px;
+  text-align: left;
+  color: rgb(44, 168, 81);
+}
+
+.toc ol{
+  list-style-type: none;
+  margin-right: 70%;
+  padding: 2px;
+  background-color: rgba(12, 12, 12, 0.795);
+  border: solid rgb(38, 141, 69);
+  border-radius: 10px;
+  text-align: left;
+  color: rgb(44, 168, 81);
+}
+
+.toc a {
+  text-decoration: none;
+  color: rgb(44, 168, 81);
+}
+
+.toc a:hover {
+  text-decoration: underline;
+  color: rgb(61, 231, 112);
+}
+
+.toc {
+  box-shadow: none;
+}
+
+.menu ul {
+  list-style: none;
+  margin-left: 20% ;
+  margin-right: 20% ;
+}
+
+.menu li{
+  border: solid rgb(38, 141, 69);
+  border-radius: 10px;
+  text-align: center;
+  color: rgb(12, 12, 12);
+}
+
+.menu a {
+font-size: 30px;
+text-decoration: none;
+color: rgb(12, 12, 12);
+font-weight: 800;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+  color: rgb(61, 231, 112);
+}
+.menu h2 {
+  text-align: center;
+}
+
+.hero h2 {
+  text-align: center;
+}
+
+.hero img {
+  border: 0.5rem solid rgb(38, 141, 69);
+  width: 50%;
+}
+
 
     </style>
     
-    <img id="logo" src="images/Escape-from-Tarkov-PNG-Isolated-Pic.png" style="border: 0px;">
+    <img id="logo" src="images/Escape-from-Tarkov-PNG-Isolated-Pic.png">
     
   </head>
 
@@ -237,16 +317,19 @@ display: table;
 <h1>Russian Ritual Response Group</h1>
    <i><h3 style="text-align: center;">"Gear up, were going dark"</h3></i>
    
-   <section>
+   <section class="menu">
    <h2>Menu</h2>
    
-<button>Home</button>
-<button>Guide</button>
-<button>Buy Escape From Tarkov</button>
+<ul>
+<li><a href="#loremipsum">Home</a></li>
+<li><a href="https://escapefromtarkov.fandom.com/wiki/Escape_from_Tarkov_Wiki">Guide to Everything</a></li>
+<li><a href="https://www.escapefromtarkov.com/preorder-page"> Pre-Order Escape From Tarkov</a></li>
+</ul>
    </section> 
 
-<section>
-<h2 style="text-align: center;border: 2px rgb(156, 153, 127) ;">Welcome Operative</h2><img src="/images/sillygoofy.gif" alt=" soldier in the dark being sillygoofy" style="border: 3px rgb(156, 153, 127);" height="500">
+<section id="hero" class="hero">
+<h2>Welcome Operative</h2>
+<img src="/images/sillygoofy.gif" alt=" soldier in the dark being sillygoofy">
 <p>In the war-ravaged world of Escape from Tarkov, cultists are a mysterious and formidable
    adversary that players must learn to hunt effectively. These enigmatic factions, known for their
     eerie rituals and devout loyalty to their dark beliefs, roam the streets and forests of Tarkov,
@@ -259,6 +342,16 @@ display: table;
      take out the mysterious cult, but also adapt to the dangerous situations you might 
      find yourself in.
 </p>
+</section>
+
+<section class="toc" id="table of contents">
+  <h2>Table of Contents</h2>
+  <ol>
+    <li><a href="#Gear">Knowing your enemy</a></li>
+    <li><a href="#rec-loadout">Recommended loadouts</a></li>
+    <li><a href="#behaviour">Cultist Combat</a></li>
+    <li><a href="#Sherpa">Sherpa Request</a></li>
+  </ol>
 </section>
 
 <section id="Gear">
@@ -495,6 +588,7 @@ display: table;
   <img src="images/TACTICAL DEVICE SHOW OFF.png" alt="tactical devices">
 </div>
 
+<div class="armor">
   <h4>Armor</h4>
   <p>
     survival is paramount, and venturing into the night to hunt down cultists requires careful 
@@ -507,6 +601,53 @@ display: table;
     your selection will define your strategy. Listed below are some recommendations 
     for each weight class and coverage.
   </p>
+
+  <div class="armortable">
+  <table>
+    <thead>
+      <th>Icon</th>
+      <th>Armor</th>
+      <th>class</th>
+      <th>Coverage</th>
+      <th>Weight</th>
+    </thead>
+    <tbody>
+<tr>
+  <td><img src="images/Armour/gzhel.webp" alt="gzhel">
+<td>GZHEL-K</td>
+<td>Class 4</td>
+<td>throax,<br>stomach</td>
+<td>8.9 kg</td>
+</tr>
+
+<tr>
+<td><img src="images/Armour/trooper.webp" alt="trooper"></td>
+<td>Trooper</td>
+<td>Class 4</td>
+<td>throax</td>
+<td>6.8 kg</td>
+</tr>
+
+<tr>
+<td><img src="images/Armour/avs.webp" alt="avs"></td>
+<td>AVS</td>
+<td>Class 4</td>
+<td>throax,<br>stomach</td>
+<td>8.7 kg</td>
+</tr>
+
+<tr>
+<td><img src="images/Armour/tv110.webp" alt="TV-110"></td>
+<td>TV-110</td>
+<td>Class 4</td>
+<td>throax,<br>stomach</td>
+<td>10.3 kg</td>
+</tr>
+    </tbody>
+    
+  </table>
+  </div>
+</div>
 
   <div class="backpacks">
   <h4>backpack</h4>
@@ -539,7 +680,7 @@ display: table;
 
 </section>
 
-<section class="behaviour">
+<section class="behaviour" id="behaviour">
 <h2>Cultist Combat</h2>
 <h3>Ai behaviours and engagement tactics</h3>
 <h4>behaviour</h4>
@@ -582,7 +723,7 @@ display: table;
   </ol>
 </section>
 
-<section class="box">
+<section class="box" id="Sherpa">
 <h2>Sherpa Request</h2>
 <p>This is a small guide on how to take on a tough enemy in a battlefield that changes every day. we are not perfect and make mistakes, so you dont have to 
   fight this battle alone. fill out the form below to be paired with one of tarkovs community sherpas. form a squad and take on the dangers of tarkov together!
