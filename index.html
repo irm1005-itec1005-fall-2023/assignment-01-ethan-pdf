@@ -326,7 +326,7 @@ font-weight: 800;
    <h3 style="text-align: center;"><i>"Gear up, were going dark"</i></h3>
    
    
-   <section class="menu">
+   <div class="menu">
    <nav>
     <h2>Menu</h2>
    
@@ -336,13 +336,13 @@ font-weight: 800;
 <li><a href="https://www.escapefromtarkov.com/preorder-page"> Pre-Order Escape From Tarkov</a></li>
 </ul>
 </nav>
-   </section> 
+   </div> 
 
 <main>
 
 <section id="hero" class="hero">
 <h2>Welcome Operative</h2>
-<img src="images/this is making me mad.jpg" alt=" soldier in the dark being sillygoofy">
+<img src="images/this_is_making_me_mad.jpg" alt=" soldier in the dark being sillygoofy">
 <p>In the war-ravaged world of Escape from Tarkov, cultists are a mysterious and formidable
    adversary that players must learn to hunt effectively. These enigmatic factions, known for their
     eerie rituals and devout loyalty to their dark beliefs, roam the streets and forests of Tarkov,
@@ -357,7 +357,7 @@ font-weight: 800;
 </p>
 </section>
 
-<section class="toc" id="tableofcontents">
+<div class="toc" id="tableofcontents">
   <nav>
   <h2>Table of Contents</h2>
   <ol>
@@ -367,7 +367,7 @@ font-weight: 800;
     <li><a href="#Sherpa">Sherpa Request</a></li>
   </ol>
 </nav>
-</section>
+</div>
 
 <section id="Gear">
   <h2>Knowing your enemey</h2>
@@ -511,9 +511,11 @@ font-weight: 800;
  </p>
 <table>
 <thead>
+  <tr>
   <th>7.62x39mm</th>
   <th>7.62x51mm</th>
   <th>9x39mm</th>
+  </tr>
 </thead>
 <tbody>
   <tr>
@@ -627,11 +629,13 @@ font-weight: 800;
   <div class="armortable">
   <table>
     <thead>
+      <tr>
       <th>Icon</th>
       <th>Armor</th>
       <th>class</th>
       <th>Coverage</th>
       <th>Weight</th>
+      </tr>
     </thead>
     <tbody>
 <tr>
@@ -778,12 +782,12 @@ font-weight: 800;
   <option value="5">50+</option>
 </select>
 <br>
-<label for="Faction">Faction:</label>
+<label>Faction:</label>
 
-  <input type="radio" id="Faction" name="Faction" value="USEC">
+  <input type="radio" id="USEC" name="Faction" value="USEC">
 <label for="USEC">USEC</label>
   
-  <input type="radio" id="Faction" name="Faction" value="BEAR">
+  <input type="radio" id="BEAR" name="Faction" value="BEAR">
   <label for="BEAR">BEAR</label>
   <br>
   <label for="additionalinfo">Additional info:</label>
